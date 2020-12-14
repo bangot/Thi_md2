@@ -1,22 +1,21 @@
-import java.io.IOException;
 import java.io.Serializable;
 import java.util.Scanner;
 
 public class Main implements Serializable {
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Manager business = new Manager();
         int cases = 0;
         do {
 
-            System.out.println("chương trình quản lý danh bạ ");
-            System.out.println("chọn chức năng");
-            System.out.println("1 : thêm mới danh bạ");
+            System.out.println("quan ly danh ba ");
+            System.out.println("chon chuc nang");
+            System.out.println("1 : them moi danh ba");
             System.out.println("2 : xem danh bạ");
-            System.out.println("3 : xóa");
-            System.out.println("4 : tìm kiếm ");
-            System.out.println("5 : sửa thông tin");
-            System.out.println("6 : exit ");
+            System.out.println("3 : xoa");
+            System.out.println("4 : tim kiem ");
+            System.out.println("5 : sua thong tin");
+            System.out.println("6 : thoat ");
             try {
                 cases = Integer.parseInt(sc.nextLine());
                 switch (cases) {

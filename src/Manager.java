@@ -1,10 +1,9 @@
-import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Manager implements DisPlay, Serializable {
+public class Manager implements DisPlay {
     Scanner sc = new Scanner(System.in);
     private ArrayList<PhoneBook> phoneBooks = new ArrayList<>();
 
@@ -14,7 +13,7 @@ public class Manager implements DisPlay, Serializable {
 
 
     @Override
-    public void addInfos() throws IOException, ClassNotFoundException {
+    public void addInfos() {
 
         int input = 0;
         do {
@@ -80,7 +79,7 @@ public class Manager implements DisPlay, Serializable {
     }
 
     @Override
-    public void show() throws IOException, ClassNotFoundException {
+    public void show() {
         int n = 0;
         do {
             System.out.println("mời chọn");
@@ -213,7 +212,7 @@ public class Manager implements DisPlay, Serializable {
                     }
                 }
             } catch (Exception e) {
-                System.out.println("Nhập sai rồi");
+                System.out.println("Nhập sai ,nhap lai");
             }
         } while (n != 2);
     }
