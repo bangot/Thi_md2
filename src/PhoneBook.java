@@ -1,5 +1,5 @@
 import java.io.Serializable;
-public class PhoneBook implements Serializable {
+public class PhoneBook  {
     private String numberPhone;
     private String phonebook;
     private String name;

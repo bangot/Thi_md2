@@ -12,30 +12,10 @@ public class Manager implements DisPlay, Serializable {
         return phoneBooks;
     }
 
-//    public void setPhoneBooks(ArrayList<PhoneBook> phoneBooks) {
-//        this.phoneBooks = phoneBooks;
-//    }
-
-//    public ArrayList<PhoneBook> readFile() throws IOException, ClassNotFoundException {
-//        FileInputStream fileInputStream = new FileInputStream("listphonebook.dat");
-//        ObjectInputStream ojb = new ObjectInputStream(fileInputStream);
-//        setPhoneBooks((ArrayList<PhoneBook>) (ojb.readObject()));
-//        ojb.close();
-//        fileInputStream.close();
-//        return getPhoneBooks();
-//    }
-//
-//    public void writeToFile() throws IOException {
-//        FileOutputStream fileOutputStream = new FileOutputStream("listphonebook.dat");
-//        ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-//        objectOutputStream.writeObject(getPhoneBooks());
-//        objectOutputStream.close();
-//        fileOutputStream.close();
-//    }
 
     @Override
     public void addInfos() throws IOException, ClassNotFoundException {
-//        setPhoneBooks(readFile());
+
         int input = 0;
         do {
             System.out.println("chọn chức năng ");
@@ -94,15 +74,13 @@ public class Manager implements DisPlay, Serializable {
                         break;
                 }
             } catch (NullPointerException | NumberFormatException e) {
-                System.out.println("mời nhập lại ");
+                System.out.println(" nhập lại ");
             }
         } while (input != 2);
     }
 
     @Override
     public void show() throws IOException, ClassNotFoundException {
-//        writeToFile();
-//        readFile();
         int n = 0;
         do {
             System.out.println("mời chọn");
@@ -117,7 +95,7 @@ public class Manager implements DisPlay, Serializable {
                 }
                 break;
             } catch (Exception e) {
-                System.out.println("mời nhập lại");
+                System.out.println(" nhập lại");
             }
         } while (n != 2);
     }
@@ -149,7 +127,7 @@ public class Manager implements DisPlay, Serializable {
                     }
                 }
             } catch (Exception e) {
-                System.out.println("Nhâp vào đê ");
+                System.out.println(" mời nhâp vào  ");
             }
         } while (n != 2);
     }

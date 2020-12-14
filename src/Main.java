@@ -8,8 +8,7 @@ public class Main implements Serializable {
         Manager business = new Manager();
         int cases = 0;
         do {
-//            business.readFile();
-//            business.writeToFile();
+
             System.out.println("chương trình quản lý danh bạ ");
             System.out.println("chọn chức năng");
             System.out.println("1 : thêm mới danh bạ");
